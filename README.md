@@ -195,18 +195,6 @@ Track these metrics to optimize your AI-powered workflow:
 
 * * *
 
-## 🤝 Support
-
-**Presenter:** Charles Kimani**Organization:** Kenya Artificial Intelligence (AI) Skilling Alliance (KAISA)
-
-**Partners:**
-
-* Microsoft
-* KEPSA (Kenya Private Sector Alliance)
-* International Labour Organization (ILO)
-* PROSPECTS
-* Power Learn Project
-
 * * *
 
 ## 📝 License
