@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI FOR DEVELOPERS: Supercharging Your Workflow</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <span class="logo-icon">⚡</span>
+                    <span class="logo-text">AI FOR DEVELOPERS</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#examples">Code Examples</a></li>
+                    <li><a href="#tools">Tools</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Supercharge Your Development Workflow</h1>
+                <p>Master AI-powered development tools and build production-ready applications with confidence</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('courses')">Start Learning</button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('examples')">View Examples</button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-number">7</div>
+                        <div class="stat-label">Comprehensive Modules</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Code Examples</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Production Ready</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="courses">
+        <div class="container">
+            <h2 class="section-title">Learning Path</h2>
+            <p class="section-subtitle">Master AI-assisted development with our comprehensive curriculum</p>
+            
+            <div class="courses-grid">
+                <div class="course-card">
+                    <div class="course-number">01</div>
+                    <h3>Introduction & Setup</h3>
+                    <p>Get started with AI development tools and configure your environment</p>
+                    <a href="course.html?file=guide" class="course-link">Start Module →</a>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-number">02</div>
+                    <h3>Mastering AI Tools</h3>
+                    <p>Deep dive into Cursor, Claude, and Antigravity capabilities</p>
+                    <a href="course.html?file=tools" class="course-link">Start Module →</a>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-number">03</div>
+                    <h3>Workflow Integration</h3>
+                    <p>Seamlessly integrate AI into your daily development practices</p>
+                    <a href="course.html?file=integration" class="course-link">Start Module →</a>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-number">04</div>
+                    <h3>Best Practices</h3>
+                    <p>Learn proven techniques for effective AI-assisted coding</p>
+                    <a href="course.html?file=best_practices" class="course-link">Start Module →</a>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-number">05</div>
+                    <h3>Security & Resilience</h3>
+                    <p>Build secure, fault-tolerant applications with AI assistance</p>
+                    <a href="course.html?file=security" class="course-link">Start Module →</a>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-number">06</div>
+                    <h3>Acceleration</h3>
+                    <p>Speed up development while maintaining quality standards</p>
+                    <a href="course.html?file=acceleration" class="course-link">Start Module →</a>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-number">07</div>
+                    <h3>Do's & Don'ts</h3>
+                    <p>Essential guidelines and pitfalls to avoid in AI development</p>
+                    <a href="course.html?file=dos_donts" class="course-link">Start Module →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Code Examples Section -->
+    <section id="examples" class="examples">
+        <div class="container">
+            <h2 class="section-title">Production-Ready Patterns</h2>
+            <p class="section-subtitle">Explore practical code examples used throughout the course</p>
+
+            <div class="examples-container">
+                <div class="examples-sidebar">
+                    <h3>Code Files</h3>
+                    <ul class="examples-list">
+                        <li><a href="#" onclick="loadExample('Circuit_Breaker_Pattern.py', 'python')">Circuit Breaker Pattern</a></li>
+                        <li><a href="#" onclick="loadExample('Exponential_Backoff.py', 'python')">Exponential Backoff</a></li>
+                        <li><a href="#" onclick="loadExample('Debbugging_Helper.py', 'python')">Debugging Helper</a></li>
+                        <li><a href="#" onclick="loadExample('Env_Variable_Security.js', 'javascript')">Environment Security</a></li>
+                        <li><a href="#" onclick="loadExample('Validator.js', 'javascript')">Authentication & Validation</a></li>
+                    </ul>
+                </div>
+
+                <div class="examples-content">
+                    <div class="code-viewer">
+                        <div class="code-header">
+                            <span class="code-filename" id="codeFilename">Select a file to view</span>
+                            <button class="btn-small" onclick="copyCode()">Copy</button>
+                        </div>
+                        <pre><code id="codeContent" class="language-python">// Select a code file from the list to view</code></pre>
+                    </div>
+
+                    <div class="code-info">
+                        <div class="info-card">
+                            <h4>About This Pattern</h4>
+                            <p id="codeDescription">Select a file to see its description</p>
+                        </div>
+                        <div class="info-card">
+                            <h4>Key Concepts</h4>
+                            <ul id="codeConcepts">
+                                <li>Select a file to view key concepts</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Section -->
+    <section id="tools" class="tools">
+        <div class="container">
+            <h2 class="section-title">Essential Tools</h2>
+            <p class="section-subtitle">Master the AI development ecosystem</p>
+
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <div class="tool-icon">🔧</div>
+                    <h3>Cursor</h3>
+                    <p>AI-powered code editor with intelligent code completion and inline suggestions</p>
+                    <ul class="tool-features">
+                        <li>Real-time code suggestions</li>
+                        <li>Integrated AI chat</li>
+                        <li>Code refactoring tools</li>
+                    </ul>
+                </div>
+
+                <div class="tool-card">
+                    <div class="tool-icon">🤖</div>
+                    <h3>Claude</h3>
+                    <p>Advanced AI assistant for complex problem-solving and code generation</p>
+                    <ul class="tool-features">
+                        <li>Code generation</li>
+                        <li>Architecture planning</li>
+                        <li>Code review assistance</li>
+                    </ul>
+                </div>
+
+                <div class="tool-card">
+                    <div class="tool-icon">⚙️</div>
+                    <h3>Antigravity</h3>
+                    <p>Framework for automated testing, deployment, and CI/CD integration</p>
+                    <ul class="tool-features">
+                        <li>Test generation</li>
+                        <li>Deployment automation</li>
+                        <li>Performance optimization</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Why This Course?</h2>
+            
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">✅</div>
+                    <h3>Comprehensive Coverage</h3>
+                    <p>From basics to production-ready patterns, covering all aspects of AI-assisted development</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Practical Examples</h3>
+                    <p>Real-world code patterns and best practices you can use immediately</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Security First</h3>
+                    <p>Learn how to build secure applications with AI assistance</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Performance Focused</h3>
+                    <p>Strategies for accelerating development without sacrificing quality</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">📚</div>
+                    <h3>For Everyone</h3>
+                    <p>Suitable for beginners and experienced developers looking to master AI tools</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">🚀</div>
+                    <h3>Production Ready</h3>
+                    <p>All examples follow enterprise best practices and are production-ready</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to Supercharge Your Development?</h2>
+            <p>Start with the introductory module and progress at your own pace</p>
+            <button class="btn btn-primary btn-large" onclick="scrollToSection('courses')">Start Learning Now</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>AI FOR DEVELOPERS</h4>
+                    <p>Master AI-powered development and build better software faster</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#courses">Courses</a></li>
+                        <li><a href="#examples">Examples</a></li>
+                        <li><a href="#tools">Tools</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="https://github.com/chankjen/AI_For_Developers" target="_blank">GitHub Repository</a></li>
+                        <li><a href="guide.md">Full Guide</a></li>
+                        <li><a href="#">Documentation</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 AI FOR DEVELOPERS. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

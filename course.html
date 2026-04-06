@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Module - AI FOR DEVELOPERS</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="course-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <span class="logo-icon">⚡</span>
+                    <span class="logo-text">AI FOR DEVELOPERS</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#courses">Courses</a></li>
+                    <li><a href="index.html#examples">Code Examples</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="course-wrapper">
+        <!-- Sidebar Navigation -->
+        <aside class="course-sidebar">
+            <div class="module-nav">
+                <h3>Course Modules</h3>
+                <ul class="module-list">
+                    <li><a href="course.html?file=guide" class="module-link">Introduction & Setup</a></li>
+                    <li><a href="course.html?file=tools" class="module-link">Mastering AI Tools</a></li>
+                    <li><a href="course.html?file=integration" class="module-link">Workflow Integration</a></li>
+                    <li><a href="course.html?file=best_practices" class="module-link">Best Practices</a></li>
+                    <li><a href="course.html?file=security" class="module-link">Security & Resilience</a></li>
+                    <li><a href="course.html?file=acceleration" class="module-link">Acceleration</a></li>
+                    <li><a href="course.html?file=dos_donts" class="module-link">Do's & Don'ts</a></li>
+                </ul>
+            </div>
+
+            <div class="module-nav">
+                <h3>Code Examples</h3>
+                <ul class="module-list">
+                    <li><a href="index.html#examples">View All Examples</a></li>
+                </ul>
+            </div>
+
+            <div class="progress-tracker">
+                <h3>Your Progress</h3>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+                <p id="progressText">0% Complete</p>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="course-content">
+            <div class="container">
+                <div class="content-header">
+                    <h1 id="moduleTitle">Loading Module...</h1>
+                    <div class="content-meta">
+                        <span class="module-status" id="moduleStatus">Loading</span>
+                    </div>
+                </div>
+
+                <div id="courseBody" class="course-body">
+                    <p>Loading content...</p>
+                </div>
+
+                <div class="navigation-buttons">
+                    <button class="btn btn-secondary" id="prevBtn" onclick="previousModule()">← Previous</button>
+                    <button class="btn btn-primary" id="nextBtn" onclick="nextModule()">Next →</button>
+                </div>
+
+                <div class="module-actions">
+                    <button class="btn btn-small" onclick="downloadModule()">⬇ Download</button>
+                    <button class="btn btn-small" onclick="shareModule()">↗ Share</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>AI FOR DEVELOPERS</h4>
+                    <p>Master AI-powered development</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="https://github.com/chankjen/AI_For_Developers" target="_blank">GitHub</a></li>
+                        <li><a href="index.html">Home</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 AI FOR DEVELOPERS. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="course.js"></script>
+</body>
+</html>
