@@ -179,7 +179,7 @@ Track these metrics to optimize your AI-powered workflow:
 * [Claude API Docs](https://docs.anthropic.com)
 * [OWASP Secure Coding Practices](https://owasp.org/www-project-secure-coding-practices)
 * [Node.js Best Practices](https://github.com/goldbergyoni/nodebestpractices)
-* [Antigravity Documentation]([Google Antigravity Documentation](https://antigravity.google/docs/get-started?_gl=1*r8jdsc*_up*MQ..*_ga*MjExNjAxOTkwMi4xNzc1NDgzMDA1*_ga_47V54ZJ3EV*czE3NzU0ODMwMDUkbzEkZzAkdDE3NzU0ODMwMDUkajYwJGwwJGgw))
+* [Google Antigravity Documentation](https://antigravity.google/docs/get-started?_gl=1*r8jdsc*_up*MQ..*_ga*MjExNjAxOTkwMi4xNzc1NDgzMDA1*_ga_47V54ZJ3EV*czE3NzU0ODMwMDUkbzEkZzAkdDE3NzU0ODMwMDUkajYwJGwwJGgw)
 
 ### Learning Platforms
 
@@ -217,7 +217,7 @@ This training material is provided under the MIT License for educational purpose
 
 ## 🎯 Next Steps
 
-1. **Complete the 30-Day Action Plan** (see presentation Slide 33)
+1. **Complete the 30-Day Action Plan** 
 2. **Join the KAISA Developer Community**
 3. **Attend Advanced Sessions:**
   * Advanced Cursor AI Techniques
