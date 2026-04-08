@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI FOR DEVELOPERS: Playground</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="playground.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <span class="logo-icon">⚡</span>
+                    <span class="logo-text">AI FOR DEVELOPERS</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="course.html">Courses</a></li>
+                    <li><a href="playground.html" class="active">Playground</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Welcome Section -->
+    <section class="playground-welcome">
+        <div class="container">
+            <div class="welcome-content">
+                <div class="welcome-image">
+                    <img src="AI_4_Devs_Infographic.png" alt="AI for Developers Infographic">
+                </div>
+                <div class="welcome-text">
+                    <h1>Welcome to the Playground!</h1>
+                    <p>Test your knowledge, challenge your understanding, and master AI-assisted development concepts through interactive quizzes, flashcards, and mind mapping exercises.</p>
+                    <p class="welcome-subtitle">Choose your challenge below and level up your skills!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Playground Section -->
+    <section class="playground" style="background-image: url('pitch.jpg');">
+        <div class="container">
+            <h2>Choose Your Challenge</h2>
+            <div class="challenge-grid">
+                <div class="challenge-card" onclick="startQuiz()">
+                    <div class="challenge-icon">🧠</div>
+                    <h3>Knowledge Quiz</h3>
+                    <p>Test your understanding of AI development concepts with our comprehensive quiz. Pass mark: 70%</p>
+                    <div class="challenge-stats">
+                        <span>14 Questions</span>
+                        <span>Pass: 70%</span>
+                    </div>
+                </div>
+
+                <div class="challenge-card" onclick="startFlashcards()">
+                    <div class="challenge-icon">📚</div>
+                    <h3>Flashcards</h3>
+                    <p>Master key concepts with interactive flashcards covering essential AI development topics.</p>
+                    <div class="challenge-stats">
+                        <span>10 Cards</span>
+                        <span>Interactive</span>
+                    </div>
+                </div>
+
+                <div class="challenge-card" onclick="startMindMaps()">
+                    <div class="challenge-icon">🗺️</div>
+                    <h3>Mind Maps</h3>
+                    <p>Connect concepts and visualize relationships in AI-assisted development workflows.</p>
+                    <div class="challenge-stats">
+                        <span>3 Challenges</span>
+                        <span>Interactive</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quiz Modal -->
+    <div id="quizModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>AI Development Knowledge Quiz</h2>
+                <span class="close" onclick="closeModal()">&times;</span>
+            </div>
+            <div id="quizContent">
+                <!-- Quiz content will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Flashcards Modal -->
+    <div id="flashcardsModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>AI Development Flashcards</h2>
+                <span class="close" onclick="closeModal()">&times;</span>
+            </div>
+            <div id="flashcardsContent">
+                <!-- Flashcards content will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Mind Maps Modal -->
+    <div id="mindmapsModal" class="modal">
+        <div class="modal-content large-modal">
+            <div class="modal-header">
+                <h2>AI Development Mind Maps</h2>
+                <span class="close" onclick="closeModal()">&times;</span>
+            </div>
+            <div id="mindmapsContent">
+                <!-- Mind maps content will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>AI FOR DEVELOPERS</h4>
+                    <p>Master AI-powered development and build better software faster</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="course.html">Courses</a></li>
+                        <li><a href="playground.html">Playground</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="https://github.com/chankjen/AI_For_Developers" target="_blank">GitHub Repository</a></li>
+                        <li><a href="guide.md">Full Guide</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 AI FOR DEVELOPERS. By <a href="https://github.com/chankjen/AI_For_Developers" target="_blank">Chakin Kim</a>. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="playground.js"></script>
+</body>
+</html>
